@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-color: #cccccc;
+    display: flex;
+    padding: .1rem;
+    justify-content:space-between;
+}
+
+.header img {
+    height: 80px;
+    width: 80px;
+    padding: 20px;
+}
+
+.logo-principal{
+    width: 100px;
+    height: 50px;
+}
+
+.logo-carrito{
+    text-align: center
+}
+
+.navegacion-principal{
+    display: flex;
+    justify-content: space-evenly;
+    height: 20px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.navegacion-principal a{
+    color: black;
+}
+
+.navegacion-principal a:hover{
+    text-decoration: underline;
+}
+
+.producto-destacado{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.producto-destacado img{
+    background-color: plum;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+
+.destacado{
+    text-align: center;
+}
+
+main{
+    padding: 30px;
+}
+
+.zapatilla-destacado{
+    width: 30%;
+    padding: 10px;
+    display: inline-block;
+    margin-inline: 1.5% ;
+    position: relative;
+}
+
+.zapatilla-imagen{
+    width: 100%;
+}
+
+.zapatilla-titulo{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.zapatilla-parrafo{
+    font-size: 12px;
+    color: #7e7d7d;
+    margin-bottom: 5px;
+}
+
+.zapatilla-boton{
+    border: 0;
+    margin-bottom: 5px;
+}
+
+.zapatilla-boton:hover{
+    background-color: rgb(231, 231, 231);
+    border-radius: 2px;
+}
+
+.zapatilla-boton a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.zapatilla-oferta{
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.precio-justo img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.imagen1 img{
+    width: 100%;
+}
+footer{
+    background-color: #111;
+}
+
+.footer-inicio{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-inicio:hover{
+    text-decoration: underline;
+}
+
+.footer-nav{
+    background-color:#111;
+    display: flex;
+    justify-content:center;
+}
+.footer-links{
+    color: white;
+    margin: 1rem;
+    opacity: 0.5s;
+}
+
+.footer-links:hover{
+    text-decoration: underline;
+}
+
+.footer-icons{
+    width: 100%;
+    padding: 30px 40px 10px;
+}
+
+.socialIconos{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIconos a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIconos a i{
+    font-size: 1.5rem;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIconos a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIconos a:hover i{
+    color: white;
+    transition: 0.5s ;
+}
+
+/* Parte zapatillas de Hombres */
+
+.zapatilla-hombres{
+    width: 25%;
+    padding: 10px;
+    display: inline-block;
+    margin-inline: 1.5% ;
+}
