@@ -5,8 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de ropa</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <header class="header">
+        <div class="logo-principal">
+            <div>
+                <a href="/index.html">
+                    <img class="logo-nike" src="../imagenes/logo principal.png" alt="logo pagina">
+                </a>
+            </div>
+        </div>
+        <div class="logo-carrito">
+            <img src="../imagenes/-shopping-cart_90604.png" alt="carrito" >
+        </div>
+    </header>
+<hr>
+<main>
+    <div class="container-title">Zapatos</div>
+
+    <div class="container-img">
+        <img src="../imagenes/zapas-hombres1.jpg" alt="">
+    </div>
+    <div class="container-info-producto">
+        <div class="container-price">
+            <span>$38.499</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="container-details-product">
+            <div class="form-group">
+                <label for="colour">Color</label>
+                <select name="colour" id="colour">
+                    <option disabled selected value="">
+                        Escoge una Opción
+                    </option>
+                    <option value="Verde">Verde</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="size">Talla</label>
+                <select name="size" id="size">
+                    <option disabled selected value="">
+                        Escoge una Opción
+                    </option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                </select>
+            </div>
+            <button class="btn-clean">Limpiar</button>
+        </div>
+
+        <div class="container-add-cart">
+            <div class="container-quantity">
+                <input type="number" name="" id="" placeholder="1" value="1" min="1"/>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="footer-icons">
+        <div class="socialIconos">
+            <a href="https://www.facebook.com/nike"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/Nike"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCUFgkRb0ZHc4Rpq15VRCICA"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/nike/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="footer">
+        <a class="footer-inicio" href="../index.html">Inicio</a>
+    </div>
+    <div class="footer-nav">
+        <a class="footer-links" href="../paginas/hombres.html">Hombres</a>
+        <a class="footer-links" href="../paginas/mujeres.html">Mujeres</a>
+        <a class="footer-links" href="../paginas/niños.html">Niños</a>
+        <a class="footer-links" href="../paginas/contactos.html">Contactos</a>
+    </div>
+</footer>
 </body>
 </html>
