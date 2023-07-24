@@ -71,6 +71,7 @@ main{
     display: inline-block;
     margin-inline: 1.5% ;
     position: relative;
+    cursor: pointer;
 }
 
 .zapatilla-imagen{
@@ -336,6 +337,7 @@ footer{
     color: #252525;
     line-height: 22px;
     margin-top: 25px;
+    max-width: 50%;
 }
 
 .container-social{
