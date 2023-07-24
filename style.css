@@ -55,7 +55,6 @@ a{
 .producto-destacado img{
     background-color: plum !important;
     display: inline-block !important;
-    justify-content: space-evenly !important;
 }
 
 .destacado{
@@ -67,10 +66,10 @@ main{
 }
 
 .zapatilla-destacado{
-    width: 30%;
-    padding: 10px;
+    max-width: 21%;
+    padding: 20px;
     display: inline-block;
-    margin-inline: 1.5% ;
+    margin-inline: 1.8% ;
     position: relative;
 }
 
@@ -487,4 +486,17 @@ footer{
 
 .text-product p:hover{
     color: #1bbeb4;
+}
+
+@media screen and (max-width: 390px) {
+    .navegacion-principal{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .zapatilla-destacado{
+        display: flex;
+        flex-direction: column;
+    }
 }
