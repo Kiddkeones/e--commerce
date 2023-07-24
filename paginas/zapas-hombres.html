@@ -21,9 +21,7 @@
         </div>
     </header>
 <hr>
-<main>
-    <div class="container-title">Zapatos</div>
-
+<main class="producto">
     <div class="container-img">
         <img src="../imagenes/zapas-hombres1.jpg" alt="">
     </div>
@@ -59,12 +57,110 @@
 
         <div class="container-add-cart">
             <div class="container-quantity">
-                <input type="number" name="" id="" placeholder="1" value="1" min="1"/>
+                <input type="number" placeholder="1" value="1" min="1" class="input-quantity"/>
+            </div>
+            <button class="btn-add-to-cart">
+                <i class="fa-solid fa-plus"></i>
+                Añadir al carrito
+            </button>
+        </div>
+
+        <div class="container-description">
+            <div class="title-description">
+                <h4>Descripcion</h4>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="text-description hidden">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores rerum dolor aperiam, vero hic ullam atque cumque cum vel porro est consequuntur alias asperiores sapiente minima, autem, molestias id in!</p>
             </div>
         </div>
 
+        <div class="container-additional-information">
+            <div class="title-additional-information">
+                <h4>Informacion Adicional</h4>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="text-additional-information hidden">
+            <p>--------</p>
+        </div>
+
+        <div class="container-reviews">
+            <div class="title-reviews">
+                <h4>Reseñas</h4>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="text-reviews hidden">
+            <p>--------</p>
+        </div>
+
+        <div class="container-social">
+            <span>Compartir</span>
+            <div class="container-buttons-social">
+                <a href="https://www.facebook.com/nike"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/Nike"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCUFgkRb0ZHc4Rpq15VRCICA"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/nike/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
     </div>
 </main>
+
+<section class="container-related-products">
+    <h2>Productos Relacionados</h2>
+    <div class="card-list-products">
+        <div class="card">
+            <div class="card-img">
+                <img src="../imagenes/zapas-hombres3.jpg" alt="producto-1">
+            </div>
+            <div class="info-card">
+                <div class="text-product">
+                    <h3>Nike Blazer Low '77 SE Next Nature</h3>
+                    <p class="category">Zapatillas de Moda para Hombre</p>
+                </div>
+                <div class="price">$46.699</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="../imagenes/zapas-hombres4.jpg" alt="producto-2">
+            </div>
+            <div class="info-card">
+                <div class="text-product">
+                    <h3>Nike Dunk High Retro</h3>
+                    <p class="category">Zapatillas de Moda para Hombre</p>
+                </div>
+                <div class="price">$69.999</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="../imagenes/zapas-hombres5.jpg" alt="producto-3">
+            </div>
+            <div class="info-card">
+                <div class="text-product">
+                    <h3>Air Jordan Legacy 312 Low</h3>
+                    <p class="category">Zapatillas de Moda para Hombre</p>
+                </div>
+                <div class="price">$82.999</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="../imagenes/zapas-hombres6.jpg" alt="producto-4">
+            </div>
+            <div class="info-card">
+                <div class="text-product">
+                    <h3>Air Jordan 5 Retro</h3>
+                    <p class="category">Zapatillas de Moda para Hombre</p>
+                </div>
+                <div class="price">$114.999</div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer>
     <div class="footer-icons">
@@ -85,5 +181,7 @@
         <a class="footer-links" href="../paginas/contactos.html">Contactos</a>
     </div>
 </footer>
+<script src="https://kit.fontawesome.com/80f2dff24a.js" crossorigin="anonymous"></script>
+<script src="../index.js"></script>
 </body>
 </html>
