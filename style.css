@@ -182,6 +182,12 @@ footer{
 
 /* Productos */
 
+.zapatilla-hombres-b{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
 .zapatilla-hombres{
     width: 25%;
     padding: 10px;
@@ -189,6 +195,20 @@ footer{
     margin-inline: 1.5% ;
 }
 
+.titulo-productos{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.titulo-productos h2{
+    font-size: 25px;
+}
+
+.container-filtros{
+    display: flex;
+    justify-content: left ;
+}
 /*Descripcion del producto */
 
 .producto{
@@ -372,6 +392,7 @@ footer{
 .container-related-products h2{
     text-align: center;
     margin-bottom: 30px;
+    font-size: 25px;
 }
 
 .card-list-products{
