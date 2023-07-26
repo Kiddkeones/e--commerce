@@ -208,6 +208,57 @@ footer{
     font-size: 25px;
 }
 
+/*Pagina Mujer*/
+.title-destacado-mujer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.title-yoga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-yoga{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-yoga-destacado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.zapatilla-destacado-mujer{
+    max-width: 21%;
+    padding: 20px;
+    display: inline-block;
+    margin-inline: 1.8% ;
+    position: relative;
+}
+
+.indumentaria-destacada{
+    max-width: 21%;
+    padding: 20px;
+    display: inline-block;
+    margin-inline: 1.8% ;
+    position: relative;
+}
+
+.title-yoga-soporte{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.btn-yoga{
+    border: 0;
+    margin-bottom: 5px;
+}
 
 /*Descripcion del producto */
 
