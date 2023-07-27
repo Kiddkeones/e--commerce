@@ -180,7 +180,7 @@ footer{
     transition: 0.5s ;
 }
 
-/* Productos */
+/* Pagina hombres */
 
 .zapatilla-hombres-b{
     display: flex;
@@ -207,7 +207,6 @@ footer{
 .titulo-productos h2{
     font-size: 25px;
 }
-
 /*Pagina Mujer*/
 .title-destacado-mujer{
     display: flex;
@@ -223,6 +222,9 @@ footer{
     padding: 20px;
 }
 
+.imagen-yoga img{
+    width: 100%;
+}
 .img-yoga{
     display: flex;
     justify-content: space-around;
@@ -266,6 +268,11 @@ footer{
     gap: 5px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.btn-yoga:hover{
+    background-color: white;
+    color: #111;
 }
 
 /*Descripcion del producto */
