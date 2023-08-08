@@ -1,0 +1,158 @@
+.title-destacado-mujer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    @include mobile{
+        padding-top: 60px;
+    }
+}
+
+.zapatilla-destacado-mujer{
+    max-width: 21%;
+    padding: 20px;
+    display: inline-block;
+    margin-inline: 1.8% ;
+    position: relative;
+
+    @include mobile {
+        display:flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .zapatilla-imagen{
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .zapatilla-titulo{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .zapatilla-parrafo{
+        font-size: 12px;
+        color: #7e7d7d;
+        margin-bottom: 5px;
+    }
+
+    .zapatilla-oferta{
+        width: 50px;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+    }
+
+    .zapatilla-boton{
+        border: 0;
+        margin-bottom: 5px;
+
+        &:hover{
+            background-color: rgb(231, 231, 231);
+            border-radius: 2px;
+        }
+
+        & a{
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+    }
+}
+
+.imagen-yoga img{
+    width: 100%;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.title-yoga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    @include mobile{
+        font-size: 30px;
+    }
+}
+
+.img-yoga2{
+    display: flex;
+    justify-content: space-around;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-yoga-soporte{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .btn-yoga{
+        border: none;
+        background-color: #111;
+        padding: 10px;
+        color: #f7f7f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover{
+            background-color: white;
+            color: #111;
+        }
+    }
+}
+
+.title-yoga-destacado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    @include mobile{
+        font-size: 30px;
+    }
+}
+
+.indumentaria-destacada{
+    max-width: 21%;
+    padding: 20px;
+    display: inline-block;
+    margin-inline: 1.8% ;
+    position: relative;
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .zapatilla-imagen{
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .zapatilla-titulo{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .zapatilla-parrafo{
+        font-size: 12px;
+        color: #7e7d7d;
+        margin-bottom: 5px;
+    }
+}
+

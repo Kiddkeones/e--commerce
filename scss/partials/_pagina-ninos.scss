@@ -1,0 +1,79 @@
+.img-niños{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & img{
+        width: 100%;
+        
+        @include mobile{
+            margin-top: 2rem;
+        }
+    }
+
+    
+}
+
+.titulo-niños{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    @include mobile{
+        margin-top: 2rem;
+    }
+
+    .title{
+        font-size: 50px;
+    }
+
+    .parrafo-titulo{
+        font-size: 25px;
+        margin: 5px;
+    }
+
+    .btn-titulo{
+        border: none;
+        background-color: #111;
+        color: #f7f7f7;
+        padding: 10px;
+        margin-top: 5px;
+        gap: 5px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: white;
+            color: #111;
+        }
+    }
+}
+
+.tarjetitas{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px;
+
+    @include mobile{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .title-tarjetita{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .btn-tarjetita{
+        border: none;
+        background-color: #111;
+        color: #f7f7f7;
+        padding: 10px;
+        margin-top: 5px;
+        gap: 5px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,43 @@
+.navegacion-principal{
+    display: flex;
+    justify-content: space-evenly;
+    height: 20px;
+    margin: 50px;
+    font-size: 23px;
+    align-items: center;
+
+    @include mobile {
+            flex-direction: column;
+            padding-top: 20px;
+            gap: 5px;
+    }
+
+    & a{
+        color: black;
+
+        &:hover{
+            text-decoration: underline !important;
+        }
+    }
+}
+
+.producto-destacado{
+    font-size: 25px;
+    margin-top: 50px;
+
+    @include mobile{
+        padding-top: 1rem;
+    }
+
+    & .destacado{
+        text-align: center;
+    }
+}
+
+.precio-justo img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.imagen1 img{
+    width: 100%;
+}
