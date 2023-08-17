@@ -6,30 +6,25 @@
     <title>Niños</title>
     <meta name="description" content="Anima a tus pequeños atletas con nuestra ropa deportiva infantil. Desde conjuntos deportivos cómodos hasta camisetas que reflejan su entusiasmo, nuestra colección para niños está diseñada para mantenerlos en movimiento con comodidad y estilo.">
     <meta name="keywords" content="Ropa deportiva para niños, Ropa activa para niños, Moda deportiva infantil, Conjuntos deportivos para niños, Camisetas deportivas para niños, Ropa deportiva juvenil">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="../imagenes/icono pagina.png" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <div class="logo-principal">
-            <a href="../index.html">
-                <img class="logo-nike" src="../imagenes/logo principal.png" alt="logo pagina">
-            </a>
-        </div>
-        <div class="logo-carrito">
-            <img src="../imagenes/-shopping-cart_90604.png" alt="carrito" >
-        </div>
+    <header>
+        <a href="../index.html"><img class="logo" src="../imagenes/logo principal.png" alt="Logo principal"></a>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="../paginas/hombres.html">Hombres</a></li>
+                <li><a href="../paginas/mujeres.html">Mujeres</a></li>
+                <li><a href="../paginas/niños.html">Niños</a></li>
+                <li><a href="../paginas/contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
     </header>
-    <hr>
-    <div>
-        <nav class="navegacion-principal">
-            <a href="../paginas/hombres.html">Hombres</a>
-            <a href="../paginas/mujeres.html">Mujeres</a>
-            <a href="../paginas/niños.html">Niños</a>
-            <a href="../paginas/contactos.html">Contactos</a>
-       </nav>
-    </div>
     <main>
         <div class="img-niños">
             <img src="../imagenes/imagen niños.jpg" alt="imagen principal niños">
@@ -70,5 +65,6 @@
             <a class="footer-links" href="../paginas/contactos.html">Contactos</a>
         </div>
     </footer>
+    <script src="../index.js"></script>
 </body>
 </html>

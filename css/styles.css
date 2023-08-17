@@ -3,28 +3,93 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 * a {
   text-decoration: none !important;
 }
 
-.header {
-  background-color: #cccccc;
+header {
   display: flex;
-  padding: 0.1rem;
+  align-items: center;
+  background-color: gray;
   justify-content: space-between;
+  padding: 1rem;
 }
-.header img {
-  height: 80px;
-  width: 80px;
-  padding: 20px;
+header .logo {
+  max-width: 5rem;
 }
-.header .logo-principal {
-  width: 100px;
-  height: 50px;
+@media screen and (max-width: 480px) {
+  header .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+  header .nav .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
 }
-.header .logo-carrito {
-  text-align: center;
+header .nav .cerrar-menu {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  header .nav .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  header .nav .cerrar-menu .cerrar-menu {
+    color: white;
+  }
+}
+header .nav .nav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+  font-size: 20px;
+}
+header .nav .nav-list li a {
+  text-decoration: none;
+  color: #111;
+}
+@media screen and (max-width: 480px) {
+  header .nav .nav-list li a {
+    color: white;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .nav .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+}
+header .abrir-menu {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  header .abrir-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  header .abrir-menu .abrir-menu {
+    color: #111;
+  }
 }
 
 .navegacion-principal {
@@ -234,6 +299,7 @@ footer .footer-nav .footer-links:hover {
 .zapatilla-hombres-b .zapatilla-titulo {
   font-size: 20px;
   margin-bottom: 5px;
+  margin-top: 30px;
 }
 .zapatilla-hombres-b .zapatilla-parrafo {
   font-size: 12px;
@@ -517,7 +583,7 @@ footer .footer-nav .footer-links:hover {
   align-items: center;
   justify-content: space-between;
 }
-.producto .container-info-product .container-price span {
+.producto .container-info-product .container-pricespan {
   font-size: 24px;
   font-weight: 300;
 }
@@ -649,51 +715,51 @@ footer .footer-nav .footer-links:hover {
   color: #111;
 }
 
-.container-related-products h2 {
+.container-related-products {
   text-align: center;
   margin-bottom: 30px;
   font-size: 25px;
 }
-.container-related-products h2 .card-list-products {
+.container-related-products .card-list-products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
 }
-.container-related-products h2 .card-list-products .card {
+.container-related-products .card-list-products .card {
   cursor: pointer;
 }
-.container-related-products h2 .card-list-products .card .card-img {
+.container-related-products .card-list-products .card .card-img {
   background: transparent;
   margin-bottom: 15px;
 }
-.container-related-products h2 .card-list-products .card .card-img img {
+.container-related-products .card-list-products .card .card-img img {
   height: 400px;
   object-fit: cover;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   max-width: 100%;
 }
-.container-related-products h2 .card-list-products .card .info-card {
+.container-related-products .card-list-products .card .info-card {
   display: flex;
   justify-content: space-between;
 }
-.container-related-products h2 .card-list-products .card .info-card .text-product {
+.container-related-products .card-list-products .card .info-card .text-product {
   color: #252525;
   font-weight: 300;
   line-height: 1.4;
 }
-.container-related-products h2 .card-list-products .card .info-card .text-product h3 {
+.container-related-products .card-list-products .card .info-card .text-product h3 {
   color: inherit;
   font-weight: inherit;
   font-size: 15px;
 }
-.container-related-products h2 .card-list-products .card .info-card .text-product h3:hover {
+.container-related-products .card-list-products .card .info-card .text-product h3:hover {
   color: #1bbeb4;
 }
-.container-related-products h2 .card-list-products .card .info-card .text-product .text-product p {
+.container-related-products .card-list-products .card .info-card .text-product p {
   color: #666;
-  font-size: 13px;
+  font-size: 14px;
 }
-.container-related-products h2 .card-list-products .card .info-card .text-product .text-product p p:hover {
+.container-related-products .card-list-products .card .info-card .text-product p:hover {
   color: #1bbeb4;
 }
 

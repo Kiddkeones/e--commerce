@@ -1,24 +1,98 @@
-.header{
-    background-color: #cccccc ;
-    display: flex ;
-    padding: .1rem ;
-    justify-content:space-between ;
-
-    & img {
-        height: 80px ;
-        width: 80px ;
-        padding: 20px ;
-    }
-
-    .logo-principal{
-        width: 100px ;
-        height: 50px ;
-    }
+header{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    justify-content: space-between;
+    padding: 1rem;
     
-    .logo-carrito{
-        text-align: center;
+    .logo{
+        max-width: 5rem;
     }
+
+    .nav{
+        @include mobile{
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #1c1c1c;
+            padding: 2rem;
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+
+            .nav.visible{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .cerrar-menu{
+            display: none;
+            
+            @include mobile{
+                display: block;
+                border: 0;
+                font-size: 1.25rem;
+                background-color: transparent;
+                cursor: pointer;
+    
+                .cerrar-menu{
+                    color: white;
+                }
+            }
+        }
+
+        .nav-list{
+            display: flex;
+            list-style-type: none;
+            gap: 3rem;
+            font-size: 20px;
+
+            & li a{
+                text-decoration: none;
+                color: #111;
+        
+                @include mobile {
+                    color:white ;
+                }
+            }
+
+            @include mobile{
+                flex-direction: column;
+                align-items: end;
+            }
+        }
+    }
+
+    .abrir-menu{
+        display: none;
+        @include mobile{
+            display: block;
+            border: 0;
+            font-size: 1.25rem;
+            background-color: transparent;
+            cursor: pointer;
+
+            .abrir-menu{
+                color: #111;
+            }
+        }
+    }
+
+    
 }
+
+
+
+
+
+
+
 
 
 

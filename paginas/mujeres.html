@@ -6,32 +6,26 @@
     <title>Mujeres</title>
     <meta name="description" content="Encuentra la moda femenina más chica y versátil en nuestra sección para mujeres. Ya sea que te enfrentes a un entrenamiento intenso o simplemente quieras lucir genial mientras te mantienes activa, nuestras prendas te acompañarán en cada paso del camino.">
     <meta name="keywords" content="Ropa deportiva para mujeres, Ropa de ejercicio femenina, Ropa deportiva femenina de moda, Tops deportivos para mujeres, Conjuntos de entrenamiento femeninos, Accesorios deportivos para mujeres">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="../imagenes/icono pagina.png" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <div class="logo-principal">
-            <a href="../index.html">
-                <img class="logo-nike" src="../imagenes/logo principal.png" alt="logo pagina">
-            </a>
-        </div>
-        <div class="logo-carrito">
-            <img src="../imagenes/-shopping-cart_90604.png" alt="carrito" >
-        </div>
-    </header>
-    <hr>
-    <main>
-        <div>
-            <nav class="navegacion-principal">
-                <a href="../paginas/hombres.html">Hombres</a>
-                <a href="../paginas/mujeres.html">Mujeres</a>
-                <a href="../paginas/niños.html">Niños</a>
-                <a href="../paginas/contactos.html">Contactos</a>
+    <header>
+        <a href="../index.html"><img class="logo" src="../imagenes/logo principal.png" alt="Logo principal"></a>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="../paginas/hombres.html">Hombres</a></li>
+                <li><a href="../paginas/mujeres.html">Mujeres</a></li>
+                <li><a href="../paginas/niños.html">Niños</a></li>
+                <li><a href="../paginas/contactos.html">Contactos</a></li>
+            </ul>
         </nav>
-        </div>
-
+    </header>
+    <main>
         <div class="title-destacado-mujer">
             <h2>Zapatilla Destacado Mujer</h2>
         </div>
@@ -129,5 +123,7 @@
             <a class="footer-links" href="../paginas/contactos.html">Contactos</a>
         </div>
     </footer>
+
+    <script src="../index.js"></script>
 </body>
 </html>

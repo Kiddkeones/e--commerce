@@ -24,7 +24,7 @@
             align-items: center;
             justify-content: space-between;
 
-            & span{
+            &span{
                 font-size: 24px;
                 font-weight: 300;
             }
@@ -184,7 +184,7 @@
     }
 }
 
-.container-related-products h2{
+.container-related-products{
     text-align: center;
     margin-bottom: 30px;
     font-size: 25px;
@@ -226,12 +226,15 @@
                             color: #1bbeb4;
                         }
                     }
+                }
 
-                    .text-product p{
+                .text-product{
+                    
+                    & p{
                         color: #666;
-                        font-size: 13px;
+                        font-size: 14px;
 
-                        & p:hover{
+                        &:hover{
                             color: #1bbeb4;
                         }
                     }

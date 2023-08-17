@@ -6,92 +6,87 @@
     <title>Tienda de Ropa</title>
     <meta name="description" content="Descubre el estilo perfecto para ti en nuestra tienda de moda en línea. Explora una amplia selección de ropa de última tendencia para hombres, mujeres y niños.">
     <meta name="keywords" content="Tienda de ropa deportiva, Comprar ropa deportiva en línea, Ropa deportiva de calidad, Marcas de ropa deportiva">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="./imagenes/icono pagina.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header">
-        <div class="logo-principal">
-            <div>
-                <a href="/index.html">
-                    <img class="logo-nike" src="./imagenes/logo principal.png" alt="logo pagina">
-                </a>
+    <header>
+        <a href="../index.html"><img class="logo" src="../imagenes/logo principal.png" alt="Logo principal"></a>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="./paginas/hombres.html">Hombres</a></li>
+                <li><a href="./paginas/mujeres.html">Mujeres</a></li>
+                <li><a href="./paginas/niños.html">Niños</a></li>
+                <li><a href="./paginas/contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>   
+        <div class="producto-destacado">
+            <h2 class="destacado">PRODUCTO DESTACADO</h2>
+        </div>
+
+        <div class="zapatilla-destacado">
+            <img class="zapatilla-imagen" src="./imagenes/zapatilla-destacada1.png" alt="zapatilla destacad1a">
+            <h4 class="zapatilla-titulo">Nike Court Vision Low Next Nature<h4>
+            <p class="zapatilla-parrafo">Zapatillas de Moda para Hombre</p>
+            <p class="precio">$38.999</p>
+            <button class="zapatilla-boton"><a href="./paginas/hombres.html">Ver Mas</a></button>
+            <img src="./imagenes/logo oferta.png" alt="logo oferta" class="zapatilla-oferta">
+        </div>
+        <div class="zapatilla-destacado">
+            <img class="zapatilla-imagen" src="./imagenes/zapatilla-destacada2.png" alt="zapatilla destacada2">
+            <h4 class="zapatilla-titulo">Nike Court Vision Mid Next Nature<h4>
+            <p class="zapatilla-parrafo">Zapatillas de Moda para Hombre</p>
+            <p class="precio">$45.999</p>
+            <button class="zapatilla-boton"><a href="./paginas/hombres.html">Ver Mas</a></button>
+        </div>
+        <div class="zapatilla-destacado">
+            <img class="zapatilla-imagen" src="./imagenes/zapatilla-destacada3.png" alt="zapatilla destacada3">
+            <h4 class="zapatilla-titulo">Air Jordan 1 Retro High OG Craft<h4>
+            <p class="zapatilla-parrafo">Zapatillas de Moda para Hombre</p>
+            <p class="precio">$107.999</p>
+            <button class="zapatilla-boton"><a href="./paginas/hombres.html">Ver Mas</a></button>
+        </div>
+        <div class="zapatilla-destacado">
+            <img class="zapatilla-imagen" src="./imagenes/zapatilla-destacada4.png" alt="zapatilla destacada4">
+            <h4 class="zapatilla-titulo">Niker Court Vision Low<h4>
+            <p class="zapatilla-parrafo">Zapatillas de Moda para Hombre</p>
+            <p class="precio">$38.999</p>
+            <button class="zapatilla-boton"><a href="./paginas/hombres.html">Ver Mas</a></button>
+        </div>
+        
+        <div class="precio-justo">
+            <img src="./imagenes/precio justo.jpg" alt="precio justo">
+        </div>
+    
+        <div class="imagen1">
+            <img src="./imagenes/img.jpg" alt="imagen 1">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <div class="socialIconos">
+                <a href="https://www.facebook.com/nike"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/Nike"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCUFgkRb0ZHc4Rpq15VRCICA"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/nike/"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
-        <div class="logo-carrito">
-            <img src="./imagenes/-shopping-cart_90604.png" alt="carrito" >
+        <div class="footer-nav">
+            <a class="footer-links" href="./paginas/hombres.html">Hombres</a>
+            <a class="footer-links" href="./paginas/mujeres.html">Mujeres</a>
+            <a class="footer-links" href="./paginas/niños.html">Niños</a>
+            <a class="footer-links" href="./paginas/contactos.html">Contactos</a>
         </div>
-    </header>
-    <hr>
-<main>
-    <div>
-        <nav class="navegacion-principal">
-            <a href="./paginas/hombres.html">Hombres</a>
-            <a href="./paginas/mujeres.html">Mujeres</a>
-            <a href="./paginas/niños.html">Niños</a>
-            <a href="./paginas/contactos.html">Contactos</a>
-        </nav>
-    </div>
-        
-    <div class="producto-destacado">
-        <h2 class="destacado">PRODUCTO DESTACADO</h2>
-    </div>
+    </footer>
 
-    <div class="zapatilla-destacado">
-        <img class="zapatilla-imagen" src="./imagenes/zapatilla destacada1.jpg" alt="zapatilla destacad1a">
-        <h4 class="zapatilla-titulo">Nike Court Vision Low Next Nature<h4>
-        <p class="zapatilla-parrafo">Zapatillas de Moda para Hombre</p>
-        <p class="precio">$38.999</p>
-        <button class="zapatilla-boton"><a href="./paginas/hombres.html">Ver Mas</a></button>
-        <img src="./imagenes/logo oferta.png" alt="logo oferta" class="zapatilla-oferta">
-    </div>
-    <div class="zapatilla-destacado">
-        <img class="zapatilla-imagen" src="./imagenes/zapatilla destacada2.jpg" alt="zapatilla destacada2">
-        <h4 class="zapatilla-titulo">Nike Court Vision Mid Next Nature<h4>
-        <p class="zapatilla-parrafo">Zapatillas de Moda para Hombre</p>
-        <p class="precio">$45.999</p>
-        <button class="zapatilla-boton"><a href="./paginas/hombres.html">Ver Mas</a></button>
-    </div>
-    <div class="zapatilla-destacado">
-        <img class="zapatilla-imagen" src="./imagenes/zapatilla destacada3.jpg" alt="zapatilla destacada3">
-        <h4 class="zapatilla-titulo">Air Jordan 1 Retro High OG Craft<h4>
-        <p class="zapatilla-parrafo">Zapatillas de Moda para Hombre</p>
-        <p class="precio">$107.999</p>
-         <button class="zapatilla-boton"><a href="./paginas/hombres.html">Ver Mas</a></button>
-    </div>
-    <div class="zapatilla-destacado">
-        <img class="zapatilla-imagen" src="./imagenes/zapatilla destacada4.jpg" alt="zapatilla destacada4">
-        <h4 class="zapatilla-titulo">Niker Court Vision Low<h4>
-        <p class="zapatilla-parrafo">Zapatillas de Moda para Hombre</p>
-        <p class="precio">$38.999</p>
-        <button class="zapatilla-boton"><a href="./paginas/hombres.html">Ver Mas</a></button>
-    </div>
-        
-    <div class="precio-justo">
-        <img src="./imagenes/precio justo.jpg" alt="precio justo">
-    </div>
-    
-    <div class="imagen1">
-        <img src="./imagenes/img.jpg" alt="imagen 1">
-    </div>
-</main>
-
-<footer class="footer">
-    <div class="footer-icons">
-        <div class="socialIconos">
-            <a href="https://www.facebook.com/nike"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com/Nike"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.youtube.com/channel/UCUFgkRb0ZHc4Rpq15VRCICA"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.instagram.com/nike/"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-    </div>
-    <div class="footer-nav">
-        <a class="footer-links" href="./paginas/hombres.html">Hombres</a>
-        <a class="footer-links" href="./paginas/mujeres.html">Mujeres</a>
-        <a class="footer-links" href="./paginas/niños.html">Niños</a>
-        <a class="footer-links" href="./paginas/contactos.html">Contactos</a>
-    </div>
-</footer>
+<script src="./index.js"></script>
 </body>
+
 </html>

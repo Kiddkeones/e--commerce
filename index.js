@@ -1,3 +1,17 @@
+//Funciones NavBar
+
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+})
+
+
+
+
 //Constantes Toggle Titles
 const toggleDescription = document.querySelector(".title-description")
 const toggleAdditionalInformation = document.querySelector(".title-additional-information")
@@ -21,3 +35,4 @@ toggleAdditionalInformation.addEventListener("click", () =>{
 toggleReviews.addEventListener("click", () =>{
     contentreviews.classList.toggle("hidden");
 });
+
