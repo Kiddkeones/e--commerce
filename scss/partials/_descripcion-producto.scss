@@ -3,6 +3,11 @@
     gap: 30px;
     margin-bottom: 80px;
 
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
     .container-img{
         background-color: #f7f7f9;
         flex: 1;
@@ -193,6 +198,11 @@
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 25px;
+
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+        }
 
         .card{
             cursor: pointer;

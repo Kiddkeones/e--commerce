@@ -1,15 +1,11 @@
 //Funciones NavBar
 
-const nav = document.querySelector("#nav");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
+const abrirBoton = document.getElementById("abrir");
+const nav = document.getElementById("nav");
 
-
-abrir.addEventListener("click", () => {
-    nav.classList.add("visible");
-})
-
-
+abrirBoton.addEventListener("click", () => {
+    nav.classList.toggle("menu-abierto");
+});
 
 
 //Constantes Toggle Titles
